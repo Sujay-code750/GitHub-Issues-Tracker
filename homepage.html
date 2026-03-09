@@ -16,37 +16,40 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="mt-[30px] bg-gray-100">
+<body class="bg-gray-100">
 
     <!-- navbar section -->
-    <div class="w-11/12 mx-auto flex items-center justify-between bg-white">
-        <div class="logo-section flex gap-[20px] items-center">
+    <div class="bg-white py-5 mb-[60px]">
+        <div class="w-11/12 mx-auto flex items-center justify-between">
+            <div class="logo-section flex gap-[20px] items-center">
             <img class="w-[40px]" src="./images/github-logo.png" alt="">
             <p class="font-bold text-[20px]">GitHub Issues Tracker</p>
         </div>
 
         <!-- scerch section -->
         <div class="flex gap-[20px]">
-            <div>
+            <div class="">
                 <label class="input">
-                    <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                    <svg class="h-5 opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none"
                             stroke="currentColor">
                             <circle cx="11" cy="11" r="8"></circle>
                             <path d="m21 21-4.3-4.3"></path>
                         </g>
                     </svg>
                     <input id="searchInput" type="search" required placeholder="Search issues..." />
-                    <button id="btnSearch" class="btn btn-primary">Search</button>
+                    <button id="btnSearch" class="btn btn-primary ">Search</button>
                 </label>
             </div>
             <button class="btn btn-primary px-[15px] py-[8px] rounded-[20px]">+ New Issue</button>
         </div>
+        </div>
     </div>
 
     <!-- btn section -->
-    <div class="flex gap-[25px] w-11/12 mx-auto mt-[50px] shadow-xl py-[20px] px-[10px] bg-white">
-        <div>
+
+       <div class="flex gap-[20px] w-10/12 mx-auto py-[50px] px-5 shadow bg-white rounded-md">
+         <div>
             <button id="allFilterBtn" onclick="allBtnClick()" class="btn btn-primary w-[100px]">All</button>
         </div>
         <div>
@@ -55,10 +58,11 @@
         <div>
             <button id="closedFilterBtn" onclick="closedBtnClick()" class="btn  w-[100px]">Closed</button>
         </div>
-    </div>
+       </div>
+ 
 
     <!-- issue section -->
-    <div class="w-11/12 mx-auto flex justify-between items-center mt-[20px] bg-white px-[20px] py-[15px]">
+    <div class="w-10/12 mx-auto flex justify-between items-center mt-3 bg-white px-[20px] py-[15px] rounded-md">
         <div class="flex items-center gap-[20px] ">
             <div>
                 <img src="./images/Aperture.png" alt="">
@@ -76,11 +80,11 @@
     </div>
 
 
-    <div class="container mx-auto shadow-xl mt-[20px] pt-[30px] bg-white">
+    <div class="w-10/12 mx-auto shadow mt-[20px] pt-[30px] bg-white">
 
         <!-- card container -->
         <div id="cardContainer"
-            class="mt-[20px] space-x-3 w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px]">
+            class="mt-[20px] space-x-3 px-10 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px]">
             <!-- dainamicaly added here -->
 
             <!-- loading spinner -->
@@ -114,7 +118,7 @@
                 </div>
                 <p id="modalDescription" class="opacity-60 pb-[20px] ">The navigation menu doesn't collapse properly on
                     mobile devices. Need to fix the responsive behavior.</p>
-                <div class="flex shadow-sm m-t[10px] py-[15px] px-[15px] justify-start gap-[100px]">
+                <div class="flex shadow-sm my-[10px] py-[15px] px-[15px] justify-start gap-[100px]">
                     <div>
                         <p class="opacity-60">Assignee:</p>
                         <p id="assignee-name" class="font-bold ">Fahim Ahmed</p>
