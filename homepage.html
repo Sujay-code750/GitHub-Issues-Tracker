@@ -95,7 +95,43 @@
         <!-- Open the modal using ID.showModal() method -->
         <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
         <dialog id="cardDetailsModal" class="modal modal-bottom sm:modal-middle rounded-[30px]">
-           
+            <div class="modal-box">
+                <p id="modalHead" class=" font-bold text-3xl pt-[15px] pb-[20px]">Fix broken image uploads</p>
+                <div class="flex pb-[20px] gap-[5px]">
+                    <p id="modalStatus">Opened</p>
+                    <p id="userName" class="opacity-60 ">-Opened by Fahim Ahmed </p>
+                    <p id="timeline" class="opacity-60 ">-22/02/2026</p>
+                </div>
+                <div class="flex space-x-[20px] pb-[20px]">
+                    <div class="flex bg-red-100 px-[10px] py-[6px] space-x-5">
+                        <img id="firstImage" class=" w-[20px]" src="./images/Vector.png" alt="">
+                        <p id="modalFirstLabels" class=" text-red-500  ">BUG</p>
+                    </div>
+                    <div class="flex bg-orange-100 px-[10px] py-[6px] space-x-5 rounded-[20px]">
+                        <img id="secondImage" class=" w-[20px]" src="./images/Vector (1).png" alt="">
+                        <p id="modalSecondLabels" class=" text-orange-500 ">help wanted</p>
+                    </div>
+                </div>
+                <p id="modalDescription" class="opacity-60 pb-[20px] ">The navigation menu doesn't collapse properly on
+                    mobile devices. Need to fix the responsive behavior.</p>
+                <div class="flex shadow-sm m-t[10px] py-[15px] px-[15px] justify-start gap-[100px]">
+                    <div>
+                        <p class="opacity-60">Assignee:</p>
+                        <p id="assignee-name" class="font-bold ">Fahim Ahmed</p>
+                    </div>
+                    <div>
+                        <p class="opacity-60">Priority:</p>
+                        <button id="priority-name"
+                            class="bg-red-600 px-[10px] border-none py-[6px] rounded-[20px] text-white ">High</button>
+                    </div>
+                </div>
+                <div class="modalAction">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
         </dialog>
     </div>
 
